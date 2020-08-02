@@ -1,12 +1,49 @@
 import React, { Component } from 'react';
+import Carousel from 'react-bootstrap/Carousel'
+
 
 export default class App extends Component {
   render() {
     return (
-      <div className='app'>
-        <h1>DevCamp React Starter</h1>
-        <h2>React Redux Router</h2>
-      </div>
+        <div className="carousel">
+          <Carousel>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src="https://m.media-amazon.com/images/I/41q3XfxpmzL._AC_UY218_.jpg"
+                alt="First slide"
+              />
+              <Carousel.Caption>
+                <h3>First slide label</h3>
+                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src="https://m.media-amazon.com/images/I/41q3XfxpmzL._AC_UY218_.jpg"
+                alt="Third slide"
+              />
+
+              <Carousel.Caption>
+                <h3>Second slide label</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src="https://m.media-amazon.com/images/I/41q3XfxpmzL._AC_UY218_.jpg"
+                alt="Third slide"
+              />
+
+              <Carousel.Caption>
+                <h3>Third slide label</h3>
+                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+              </Carousel.Caption>
+            </Carousel.Item>
+          </Carousel>
+        </div>
     );
   }
 }
